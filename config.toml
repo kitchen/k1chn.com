@@ -6,5 +6,5 @@ theme = 'purehugo'
 
 [params]
 githubName = "kitchen"
-description = "putting the amateur in amateur radio"
+description = "amateurish amateur radio"
 hideSidebarIconText = true
