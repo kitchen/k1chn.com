@@ -1,5 +1,10 @@
-baseURL = "http://example.org/"
+baseURL = "https://k1chn.com/"
 languageCode = "en-us"
-title = "My New Hugo Site"
+title = "K1CHN"
 
 theme = 'purehugo'
+
+[params]
+githubName = "kitchen"
+description = "putting the amateur in amateur radio"
+hideSidebarIconText = true
