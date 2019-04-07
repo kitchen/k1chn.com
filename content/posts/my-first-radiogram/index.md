@@ -1,7 +1,6 @@
 ---
 title: "My First Radiogram"
 date: 2019-04-07T02:25:31-07:00
-draft: true
 resources:
 - src: '*.png'
 
