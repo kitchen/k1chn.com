@@ -1,2 +1,5 @@
 # the generated site
 public/
+
+# the dev generated site
+dev/
