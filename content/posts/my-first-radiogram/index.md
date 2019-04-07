@@ -6,13 +6,14 @@ resources:
 
 ---
 
-I've been listening in on and checking into the [NTTN](http://nttnweb.us/) (Northwest Oregon Traffic and Training Net) net for quite some time. Just recently, I sent my first radiogram! I'm a net control operator for the [NET net](https://portlandprepares.org/net-resources/radio/ham-radio/practice-opportunities/net-net/) here in Portland, and decided that I'd talk about NTS and traffic handling during one of my sessions. NET doesn't use NTS radiograms, but I still think there's a lot of valuable experience to be gained from participating in NTS that will directly apply to NET deployments.
+I've been listening in on and checking into the [NTTN](http://nttnweb.us/) (Northwest Oregon Traffic and Training Net) net for quite some time. Just recently, I sent my first [radiogram](https://en.wikipedia.org/wiki/ARRL_Radiogram)! I'm a net control operator for the [NET net](https://portlandprepares.org/net-resources/radio/ham-radio/practice-opportunities/net-net/) here in Portland, and decided that I'd talk about NTS and traffic handling during one of my sessions. NET doesn't use NTS radiograms, but I still think there's a lot of valuable experience to be gained from participating in NTS that will directly apply to NET deployments.
 
 I'd been listening for a long time, but was nervous about volunteering to handle traffic, and nervous about trying to originate my own traffic. What do I do with traffic I've handled? How does it get from me to the person who it's destined for, assuming it's traffic bound for a local person and I'd be taking it the "last mile" to the person. As far as originating traffic, what sort of traffic is appropriate? NTS is "formal" traffic handling, but does that mean it can only be used for formal messages or can I say hi to a friend across the country for grins?
 
 I asked Michael AE7XP what his thoughts on the matter were, and he suggested I ask the net control of the NTTN some night, that it could be an interesting discussion and they'd have better answers for me anyways. So, this Friday, I did just that.
 
 I asked 2 questions:
+
 * If I handle a piece of traffic, what do I do with it? How do I get it that last mile to the recipient?
 * What sort of traffic is appropriate to bring to the net? Can I say hi to a friend or is that too informal?
 
