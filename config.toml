@@ -8,3 +8,4 @@ theme = 'purehugo'
 githubName = "kitchen"
 description = "amateurish amateur radio"
 hideSidebarIconText = true
+hideShareOptions = true
