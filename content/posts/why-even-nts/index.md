@@ -1,7 +1,6 @@
 ---
 title: "Why Even NTS?"
 date: 2019-04-07T03:09:48-07:00
-draft: true
 ---
 
 In April 2017, I traveled to Japan to do some backpacking and general exploring of the country. I [spent 9 days walking](https://drive.google.com/open?id=1RZat_3m16gy6sheA4cbLDgy4WSI&usp=sharing) on a section of the [Tokai Nature Trail](https://en.wikipedia.org/wiki/T%C5%8Dkai_Nature_Trail), beginning in Kawaguchiko, Yamanashi Prefecture, on the northern side of Mount Fuji and ending in the Kurata region of Shizuoka Prefecture, about 125 trail miles away. During that trip, I came across a section of the Shinkansen where the train was leaving one tunnel, traveling a short section of track at full speed, and entering another tunnel. The fence surrounding the tracks was fairly close to them, and given the frequency with which the Shinkansen runs, I knew I wouldn't have to wait long for a train (or many, as was the case) [to go speeding past](https://www.youtube.com/watch?v=FdI46tQARlw).
