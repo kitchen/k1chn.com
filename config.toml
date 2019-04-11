@@ -2,7 +2,8 @@ baseURL = "https://www.k1chn.com/"
 languageCode = "en-us"
 title = "K1CHN"
 
-theme = 'purehugo'
+theme = 'pure-bootstrap'
+# theme = 'purehugo'
 
 [params]
 githubName = "kitchen"
