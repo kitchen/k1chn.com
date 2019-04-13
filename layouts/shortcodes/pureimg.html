@@ -1,13 +1,21 @@
 <div class="post-images pure-g">
   <div class="pure-u-1 pure-u-md-1-2">
+    {{ $url := ""}}
+    {{- with .Get "src" | .Page.Resources.GetMatch }}
+      {{- $url = .RelPermalink }}
+    {{ else }}
+      {{ $url = .Get "src" }}
+    {{ end }}
     {{- if .Get "link" }}
       <a href="{{ .Get "link" }}"
         {{ with .Get "target" }} target="{{ . }}"{{ end }}
         {{ with .Get "rel" }} rel="{{ . }}"{{ end }}
       >
+    {{- else if not (.Get "link_to_image") }}
+      <a href="{{ $url }}" class="pure-img-responsive">
     {{- end }}
 
-    <img src="{{ with .Get "src" | .Page.Resources.GetMatch }}{{ .RelPermalink }}{{ else }}{{ .Get "src" }}{{ end }}"
+    <img src="{{ $url }}"
          {{- if or (.Get "alt") (.Get "caption") }}
          alt="{{ with .Get "alt" }}{{ . }}{{ else }}{{ .Get "caption" | markdownify| plainify }}{{ end }}"
          {{- end -}}
@@ -16,7 +24,7 @@
          class="pure-img-responsive"
     /> <!-- Closing img tag -->
 
-    {{- if .Get "link" }}
+    {{- if (or (.Get "link") (not (.Get "link_to_image"))) }}
       </a>
     {{- end }}
 
