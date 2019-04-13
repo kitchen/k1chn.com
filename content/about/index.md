@@ -1,6 +1,7 @@
 ---
 title: "About"
 date: 2019-04-07T13:27:46-07:00
+disable_comments: true
 ---
 
 Greetings, I am Jeremy Kitchen, I'm a ham radio operator, and my call sign is K1CHN.

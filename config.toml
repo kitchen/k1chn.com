@@ -3,6 +3,7 @@ languageCode = "en-us"
 title = "K1CHN"
 
 theme = 'purehugo'
+disqusShortname = 'k1chn'
 
 [params]
 githubName = "kitchen"
