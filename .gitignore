@@ -5,4 +5,4 @@ public/
 dev/
 
 # not really sure, but I think this is part of the asset pipeline?
-resources/
+/resources/
