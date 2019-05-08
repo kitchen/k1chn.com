@@ -1,6 +1,6 @@
 ---
 title: "Resources"
-date: 2019-04-07T14:47:08-07:00
+disable_comments: true
 ---
 
 Here I'll share some resources for ham radio operators that I've collected.
