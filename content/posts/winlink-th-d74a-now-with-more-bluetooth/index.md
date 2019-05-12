@@ -79,14 +79,6 @@ Then you `pair 24:71:89:A2:4A:68` (use your radio's mac address, not mine ;-) an
 Attempting to pair with 24:71:89:A2:4A:68
 [CHG] Device 24:71:89:A2:4A:68 Connected: yes
 Request confirmation
-[agent] Confirm passkey 345344 (yes/no):
-[agent] Confirm passkey 345344 (yes/no): no
-Failed to pair: org.bluez.Error.AuthenticationFailed
-[CHG] Device 24:71:89:A2:4A:68 Connected: no
-[bluetooth]# pair 24:71:89:A2:4A:68
-Attempting to pair with 24:71:89:A2:4A:68
-[CHG] Device 24:71:89:A2:4A:68 Connected: yes
-Request confirmation
 [agent] Confirm passkey 187740 (yes/no): yes
 [CHG] Device 24:71:89:A2:4A:68 UUIDs: 00001101-0000-1000-8000-00805f9b34fb
 [CHG] Device 24:71:89:A2:4A:68 UUIDs: 00001112-0000-1000-8000-00805f9b34fb
