@@ -118,7 +118,7 @@ rfcomm connect 0 24:71:89:A2:4A:68 2
 
 What does any of that even mean?
 
-So, my understanding of it is that `rfcomm` is what actually goes about creating the `/dev/rfcommN` devices that you can then connect to as serial port devices. The `0` in the above command is which one you'd like to configure. As far as I can tell, this is arbitrary, just needs to not already be in use by another `rfcomm`. The `24:71:89:A2:4A:68` is, of course, the mac address of the radio. And the `2` is the channel. I'm still pretty foggy on what the channel is, but I know that, [at least on my radio, it needs to be 2](https://lieselotte-sky.tumblr.com/post/164194743525/kenwood-th-d74-and-linux-w-bluetooth-packet). 1 "works", but it doesn't actually work. 2, however, works. YMMV. And I'd love to know more about how to even discover what this should be. **UPDATE:** [I know why now!](#update-channel-2)
+So, my understanding of it is that `rfcomm` is what actually goes about creating the `/dev/rfcommN` devices that you can then connect to as serial port devices. The `0` in the above command is which one you'd like to configure. As far as I can tell, this is arbitrary, just needs to not already be in use by another `rfcomm`. The `24:71:89:A2:4A:68` is, of course, the mac address of the radio. And the `2` is the channel. I'm still pretty foggy on what the channel is, but I know that, [at least on my radio, it needs to be 2](https://lieselotte-sky.tumblr.com/post/164194743525/kenwood-th-d74-and-linux-w-bluetooth-packet). 1 "works", but it doesn't actually work. 2, however, works. YMMV. And I'd love to know more about how to even discover what this should be. **UPDATE:** [I know why now!](#update-channel-info)
 
 This command, if it works will stay running in the foreground:
 
@@ -199,7 +199,7 @@ So, what kinda set me down this road today is I was playing around with making i
 If you've made it this far, thanks for reading! If this helped you, I'd love to hear about it! If you're having trouble, I'd definitely love to hear about it and try to get you working!
 
 
-# <a name="update-channel-2"></a>Update: Channel info!
+# Update: Channel info!
 
 Above I mentioned I wasn't sure why channel 2 was what it should be. I now know why. `sdptool records 24:71:89:A2:4A:68` [via](https://www.thinkwiki.org/wiki/How_to_setup_Bluetooth)
 ```
