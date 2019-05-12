@@ -118,7 +118,7 @@ rfcomm connect 0 24:71:89:A2:4A:68 2
 
 What does any of that even mean?
 
-So, my understanding of it is that `rfcomm` is what actually goes about creating the `/dev/rfcommN` devices that you can then connect to as serial port devices. The `0` in the above command is which one you'd like to configure. As far as I can tell, this is arbitrary, just needs to not already be in use by another `rfcomm`. The `24:71:89:A2:4A:68` is, of course, the mac address of the radio. And the `2` is the channel. I'm still pretty foggy on what the channel is, but I know that, [at least on my radio, it needs to be 2](https://lieselotte-sky.tumblr.com/post/164194743525/kenwood-th-d74-and-linux-w-bluetooth-packet). 1 "works", but it doesn't actually work. 2, however, works. YMMV. And I'd love to know more about how to even discover what this should be.
+So, my understanding of it is that `rfcomm` is what actually goes about creating the `/dev/rfcommN` devices that you can then connect to as serial port devices. The `0` in the above command is which one you'd like to configure. As far as I can tell, this is arbitrary, just needs to not already be in use by another `rfcomm`. The `24:71:89:A2:4A:68` is, of course, the mac address of the radio. And the `2` is the channel. I'm still pretty foggy on what the channel is, but I know that, [at least on my radio, it needs to be 2](https://lieselotte-sky.tumblr.com/post/164194743525/kenwood-th-d74-and-linux-w-bluetooth-packet). 1 "works", but it doesn't actually work. 2, however, works. YMMV. And I'd love to know more about how to even discover what this should be. **UPDATE:** [I know why now!](#update-channel-2)
 
 This command, if it works will stay running in the foreground:
 
@@ -197,3 +197,45 @@ This can be done in really any order. `rfcomm release 0` will error if `kissatta
 So, what kinda set me down this road today is I was playing around with making it so when I plug my radio in via usb, kissattach comes up, kissparms runs, and it's ready to roll. When I unplug the radio, it tears everything down. I actually got the tearing down bits working, but I had to manually start the systemd service that launched the `kissattach` and such when plugging the radio in. Still better than doing it all manually every time. I'd still like to complete that work, if for no other reason than it provides a learning opportunity for how to use systemd. But I'd also like to do this for the bluetooth side of things. That would mean I can grab my laptop, turn my radio on, open the pat web interface, check my winlink email, and tear it all down without logging into the pi at all. That would be *perfect*. So, I'm going to play around with trying to do that. If/when I am successful, I will of course post about it here :)
 
 If you've made it this far, thanks for reading! If this helped you, I'd love to hear about it! If you're having trouble, I'd definitely love to hear about it and try to get you working!
+
+
+# <a name="update-channel-2"></a>Update: Channel info!
+
+Above I mentioned I wasn't sure why channel 2 was what it should be. I now know why. `sdptool records 24:71:89:A2:4A:68` [via](https://www.thinkwiki.org/wiki/How_to_setup_Bluetooth)
+```
+root@raspberrypi:~# sdptool records 24:71:89:A2:4A:68
+Service RecHandle: 0x10000
+Service Class ID List:
+  "Headset Audio Gateway" (0x1112)
+  "Generic Audio" (0x1203)
+Protocol Descriptor List:
+  "L2CAP" (0x0100)
+  "RFCOMM" (0x0003)
+    Channel: 1
+Language Base Attr List:
+  code_ISO639: 0x656e
+  encoding:    0x6a
+  base_offset: 0x100
+Profile Descriptor List:
+  "Headset" (0x1108)
+    Version: 0x0102
+
+Service Name: Serial Port
+Service RecHandle: 0x10001
+Service Class ID List:
+  "Serial Port" (0x1101)
+Protocol Descriptor List:
+  "L2CAP" (0x0100)
+  "RFCOMM" (0x0003)
+    Channel: 2
+Language Base Attr List:
+  code_ISO639: 0x656e
+  encoding:    0x6a
+  base_offset: 0x100
+Profile Descriptor List:
+  "Serial Port" (0x1101)
+    Version: 0x0100
+
+```
+
+As you can see in that second stanza, it says `RFCOMM` and `Channel: 2`. So, that makes sense!
