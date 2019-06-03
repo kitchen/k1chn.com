@@ -22,7 +22,7 @@ A quick rundown though of the stuff you're looking at:
 * water -- not just the faucet, but I have a bottle there with some ice water in it. I'll probably drink all of that and more during the net. I get thirsty, and also it helps me slow down and pace things a bit if I stop and take a drink of water after putting out a call for check-ins or comments or whatever if the net is kinda slow.
 * power supply -- it's off to the right, but I have my desktop 12V power supply also up there. I use this rather than the stock supply that came with the radio because it seems to both provide more power (it's certainly capable of more power, anyways) and the power seems to be cleaner. I've had comments in the past of background noise problems, but last time after the net I swapped out the power supply and tried it and folks said it was free of background noise. Perfect.
 
-Here's the power supply. It's just a Powerwerx 30 amp power supply.
+Here's the power supply. It's just a Powerwerx 30 amp power supply. I "made" the cable by taking the stock power supply that came with the radio, cutting it, and putting Anderson connectors on the ends. The stock supply is 12V, so this is convenient for using with other 12V sources. There's a big warning though to not wire directly to a vehicle's 12V supply, however, because it's not a well regulated 12V, and that can hurt the radio. It expects a regulated 12V source. Makes sense. Also, pro tip, bust out your meter and check the polarity of the wires before you put the connectors on. Some radios don't much care for reversed polarity, as it turns out. *\*ahem\**
 
 {{< pureimg src="power-supply.jpg" caption="power supply" >}}
 
