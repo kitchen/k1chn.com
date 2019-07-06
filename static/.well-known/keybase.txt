@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/kitchen
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://k1chn.com
+  * I am kitchen (https://keybase.io/kitchen) on keybase.
+  * I have a public key ASD-EjAIU3qmQMOvR--G8Mn-Vtom6xszrOsc9RkE2LhC7Qo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0101992252b890546c24744d2f37139e4064fed79d2e707f59b8981e4367dacfa6350a",
+      "host": "keybase.io",
+      "kid": "0120fe123008537aa640c3af47ef86f0c9fe56da26eb1b33aceb1cf51904d8b842ed0a",
+      "uid": "842e60cb606eea95739ba227533cb700",
+      "username": "kitchen"
+    },
+    "merkle_root": {
+      "ctime": 1562391200,
+      "hash": "227a4e5c3d5330d1f4c3302885e7757874fc1ead6d489b36617ee79711f7386c167cb3f7b38f449c6afcd07edb664ecca471575f31c127001da4afa9bc8cec99",
+      "hash_meta": "d3c214f110b4aac439fbdd8e899e33fe2fd1811b916a67e1a62e304c169266d0",
+      "seqno": 5704189
+    },
+    "service": {
+      "entropy": "YvzaqUcqSeMwoX+4+tS4jS8r",
+      "hostname": "k1chn.com",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "4.1.0"
+  },
+  "ctime": 1562391208,
+  "expire_in": 504576000,
+  "prev": "8eaf7c7234e2a169631baedf611a5bb6e937d1d552d229deeb2f320d28ac6537",
+  "seqno": 37,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEg/hIwCFN6pkDDr0fvhvDJ/lbaJusbM6zrHPUZBNi4Qu0Kp3BheWxvYWTESpcCJcQgjq98cjTioWljG67fYRpbtuk30dVS0ine6y8yDSisZTfEIFzqISzCXocSX67mrgu7qIifZnVcaJWZfYwocFQEofchAgHCo3NpZ8RA8kRGZNNbzYtIe+lJH5seFx0zFbLQoswRM0K6aa8U4b24ofcvTj2FBUfxVoa+RcL3ieTD0A0dmEoX3x2h20oBAahzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEINgUnK3mK1VgfSP44aU3AA1ePWMnI6I+ee244czb6oRqo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/kitchen
+
+==================================================================
