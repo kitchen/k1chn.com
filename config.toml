@@ -10,3 +10,18 @@ githubName = "kitchen"
 description = "amateurish amateur radio"
 hideSidebarIconText = true
 hideShareOptions = true
+
+[deployment]
+order = [".jp.?g$", ".gif$", ".png$"]
+
+# dev.k1chn.com
+[[deployment.targets]]
+name = "dev.k1chn.com"
+URL = "s3://dev-k1chn-com?region=us-west-2"
+cloudFrontDistributionID = "E2TKETTMNUP7KO"
+
+# k1chn.com
+[[deployment.targets]]
+name = "k1chn.com"
+URL = "s3://k1chn-com?region=us-west-2"
+cloudFrontDistributionId = "E3YYOY51H28TS"
