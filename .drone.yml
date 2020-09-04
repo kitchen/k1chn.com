@@ -1,0 +1,22 @@
+---
+kind: pipeline
+type: docker
+name: k1chn.com build
+
+platform:
+  os: linux
+  arch: amd64
+
+  # TODO https://hub.docker.com/r/klakegg/hugo/ building arm64 containers.
+  # which ... is a hell of a lot of work. There's a lot of hardcoded amd64 all over that code.
+
+steps:
+  - name: build site
+    image: golang:1.15
+    commands:
+      - go run https://github.com/gohugoio/hugo
+
+  # - name: publish dev site
+  #   image: golang:1.15
+  #   commands:
+  #     - go run https://github.com/gohugoio/hugo 
