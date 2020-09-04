@@ -14,7 +14,7 @@ steps:
   - name: build site
     image: golang:1.15
     commands:
-      - go run https://github.com/gohugoio/hugo
+      - go run github.com/gohugoio/hugo
 
   # - name: publish dev site
   #   image: golang:1.15
