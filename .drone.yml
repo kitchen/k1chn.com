@@ -14,7 +14,7 @@ steps:
   - name: submodules
     image: plugins/git
     commands:
-      - git submodule update --recursive --remote
+      - git submodule update --init --recursive --remote
 
   - name: build site
     image: golang:1.15
