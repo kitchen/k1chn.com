@@ -12,7 +12,7 @@ platform:
 
 steps:
   - name: submodules
-    image: alpine/git
+    image: plugins/git
     commands:
       - git submodule update --recursive --remote
 
