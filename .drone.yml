@@ -11,6 +11,11 @@ platform:
   # which ... is a hell of a lot of work. There's a lot of hardcoded amd64 all over that code.
 
 steps:
+  - name: submodules
+    image: alpine/git
+    commands:
+      - git submodule update --recursive --remote
+
   - name: build site
     image: golang:1.15
     commands:
