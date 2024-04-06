@@ -1,0 +1,12 @@
+baseURL = "https://www.k1chn.com/"
+languageCode = "en-us"
+title = "K1CHN"
+
+theme = 'github.com/dplesca/purehugo'
+disqusShortname = 'k1chn'
+
+[params]
+githubName = "kitchen"
+description = "amateurish amateur radio"
+hideSidebarIconText = true
+hideShareOptions = true
